@@ -6,10 +6,15 @@ USER root
 RUN apt-get update && \
   DEBIAN_FRONTEND="noninteractive" apt-get install --yes \
   bash \
+  bash-completion \
+  curl \
+  gcc \
   gdebi-core \
   git \
+  golang-go \
   htop \
   locales \
+  make \
   r-base \
   ssh \
   sudo \
@@ -44,4 +49,3 @@ USER coder
 
 # Add RStudio to path
 ENV PATH /usr/lib/rstudio-server/bin:${PATH}
-
